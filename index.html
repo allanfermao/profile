@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Allan Jr F. de Souza</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<style type="text/css">
 		#geral{
 			width: 100vw;
-			height: 100vh;
-			background-color: #F4F3F3;
+			min-height: 100vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -20,18 +20,97 @@
 		#quadro{
 			border-radius: 10px;
 			background-color: white;
-			border: 2px solid blue;
+			border: 4px solid;
+			border-image-slice: 1;
+			border-image-source: radial-gradient(#2700ED, #00DBC9);
+			width: 55%;
+			padding: 2%;
+			margin-top: 1%;
+			box-sizing: border-box;
+		}
+		#quadro img{
+			width: 33%;
+			max-height: 41vh;
+			min-width: 73px;
+			display: inline-block;			
+			margin:0;
+			border-radius: 10px;
+			margin-right: 2%;
+			margin-bottom: 1%;
 		}
 		body{
 			margin:0;
 			padding: 0;
+			background-color: #F4F3F3;
+		}
+		h2{
+			margin:0;
+			width: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			box-sizing: border-box;
+			display: inline-flex;
+		}
+		h4{
+			margin:0;
+			margin-bottom:0;
+			padding: 0;			
+			box-sizing: border-box;
+			margin-top: 1%;
+		}
+		p{
+			box-sizing: border-box;
+			margin:0;
+			text-align: justify;
+
+		}
+		a{
+			color: #0082CC;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		@media screen and (max-width: 980px){
+			#quadro{
+				width: 70%;
+			}
+		}
+		@media screen and (max-width: 550px) {
+			#quadro{
+				width: 90%;
+			}
+		}
+		@media screen and (max-width: 365px) {			
+			h2{
+				font-size: 20px;
+			}
 		}
 	</style>
 </head>
 <body>
 	<div id="geral">
-		<div id="quadro">
-			<h2>Allan Junior Fermao de Souza</h2>
+		<div id="quadro">			
+			<p><img src="./profile.jpg" align="left"></p>				
+			<h2><p style="text-align: center;width: 100%">Allan Junior Fermao de Souza</p></h2>
+			<h4>Informações Acadêmicas</h4>									
+			<p>
+				Graduando de Ciência da Computação pela Universidade Federal do Espírito Santo.
+			</p>	
+			<h4>Experiência Profissional</h4>
+			<p>					
+				Programação procedural e orientada a objetos em linguagens como C, C++ e Java;<br>
+				Desenvolvimento Web (PHP/Node, Javascript, HTML, CSS, MySQL e afins);<br>
+				Projetos pessoais e profissionais de sites responsivos e softwares de gerência e contabilidade tais como controle de comandas/pedidos, catálogos de produtos, portais de anúncios, blogs, etc.
+			</p>	
+			<h4 style="text-align: center;margin-top: 2%">Informações de contato</h4>
+			<p style="margin-top: 1%;text-align: center;">				
+				<p style="text-align: center; margin-top: 1%"><b>Celular:</b> (27) 99803-0217 <i class="bi bi-whatsapp"></i></p>
+				<p style="text-align: center; margin-top: 1%"><b>Email:</b> allanfermao@gmail.com <i class="bi bi-envelope"></i></p>			
+				<p style="text-align: center; margin-top: 1%"><b>Instagram: </b><a href="https://www.instagram.com/allanjuniorsouza/" target="_blank"> @allanjuniorsouza</a> <i class="bi bi-instagram"></i></p>
+				<p style="text-align: center; margin-top: 1%"><a href="https://www.linkedin.com/in/allan-junior-fermao-de-souza-19ba9b85/" target="_blank">LinkedIn</a> <i class="bi bi-linkedin"></i></p>
+			</p>
 		</div>
 	</div>
 </body>
